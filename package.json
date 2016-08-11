@@ -1,6 +1,6 @@
 {
   "name": "parse-date-range",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Parses two strings to determine whether they are valid ISO8601 Dates. Otherwise returns a date range of a given length (defaults to one week).",
   "homepage": "https://github.com/mishguruorg/parse-date-range",
   "author": {
