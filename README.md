@@ -10,9 +10,11 @@ $ npm install --save parse-date-range
 ## Usage
 
 ```js
-var parseDateRange = require('parse-date-range');
+import parseDateRange from 'parse-date-range'
 
-parseDateRange('Rainbow');
+const res = parseDateRange('2016-08-11T10:39:56+00:00', '2016-08-11T10:39:56+00:00')
+const startDate = res.startDate // Date object
+const endDate = res.startDate // Date object
 ```
 ## License
 
