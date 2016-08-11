@@ -1,0 +1,44 @@
+{
+  "name": "parse-date-range",
+  "version": "0.0.0",
+  "description": "Parses two strings to determine whether they are valid ISO8601 Dates. Otherwise returns a date range of a given length (defaults to one week).",
+  "homepage": "https://github.com/mishguruorg/parse-date-range",
+  "author": {
+    "name": "Mish Guru",
+    "email": "dev@mish.guru",
+    "url": "mish.guru"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "keywords": [
+    "ISO",
+    "Date",
+    "range",
+    "ISO8601",
+    "moment"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "6.9.0",
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "standard": "^7.1.2"
+  },
+  "repository": "git@github.com:mishguruorg/parse-date-range.git",
+  "scripts": {
+    "build": "babel --optional runtime lib --out-dir dist --copy-files",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register --recursive specs && standard",
+    "prepublish": "babel --optional runtime lib --out-dir dist --copy-files",
+    "postpublish": "rm -rf dist"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.14.2",
+    "moment": "^2.14.1"
+  }
+}
